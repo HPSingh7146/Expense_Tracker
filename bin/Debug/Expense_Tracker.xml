@@ -1,0 +1,261 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Expense_Tracker
+</name>
+</assembly>
+<members>
+<member name="T:Expense_Tracker.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:Expense_Tracker.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:Expense_Tracker.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="P:Expense_Tracker.My.Resources.Resources.user">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="T:Expense_Tracker.db_Expense_TrackerDataSet">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:Expense_Tracker.db_Expense_TrackerDataSet.categoryDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Expense_Tracker.db_Expense_TrackerDataSet.ExpenseDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Expense_Tracker.db_Expense_TrackerDataSet.IncomeDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Expense_Tracker.db_Expense_TrackerDataSet.UserDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Expense_Tracker.db_Expense_TrackerDataSet.categoryRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Expense_Tracker.db_Expense_TrackerDataSet.ExpenseRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Expense_Tracker.db_Expense_TrackerDataSet.IncomeRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Expense_Tracker.db_Expense_TrackerDataSet.UserRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Expense_Tracker.db_Expense_TrackerDataSet.categoryRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Expense_Tracker.db_Expense_TrackerDataSet.ExpenseRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Expense_Tracker.db_Expense_TrackerDataSet.IncomeRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Expense_Tracker.db_Expense_TrackerDataSet.UserRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Expense_Tracker.db_Expense_TrackerDataSetTableAdapters.categoryTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Expense_Tracker.db_Expense_TrackerDataSetTableAdapters.ExpenseTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Expense_Tracker.db_Expense_TrackerDataSetTableAdapters.IncomeTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Expense_Tracker.db_Expense_TrackerDataSetTableAdapters.UserTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Expense_Tracker.db_Expense_TrackerDataSetTableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:Expense_Tracker.db_Expense_TrackerDataSetTableAdapters.TableAdapterManager.UpdateUpdatedRows(Expense_Tracker.db_Expense_TrackerDataSet,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:Expense_Tracker.db_Expense_TrackerDataSetTableAdapters.TableAdapterManager.UpdateInsertedRows(Expense_Tracker.db_Expense_TrackerDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:Expense_Tracker.db_Expense_TrackerDataSetTableAdapters.TableAdapterManager.UpdateDeletedRows(Expense_Tracker.db_Expense_TrackerDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:Expense_Tracker.db_Expense_TrackerDataSetTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:Expense_Tracker.db_Expense_TrackerDataSetTableAdapters.TableAdapterManager.UpdateAll(Expense_Tracker.db_Expense_TrackerDataSet)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:Expense_Tracker.db_Expense_TrackerDataSetTableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:Expense_Tracker.db_Expense_TrackerDataSetTableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
+<member name="T:Expense_Tracker.ExpenseTrackerDataSet">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:Expense_Tracker.ExpenseTrackerDataSet.expenseDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Expense_Tracker.ExpenseTrackerDataSet.incomeDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Expense_Tracker.ExpenseTrackerDataSet.userbaseDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Expense_Tracker.ExpenseTrackerDataSet.expenseRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Expense_Tracker.ExpenseTrackerDataSet.incomeRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Expense_Tracker.ExpenseTrackerDataSet.userbaseRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Expense_Tracker.ExpenseTrackerDataSet.expenseRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Expense_Tracker.ExpenseTrackerDataSet.incomeRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Expense_Tracker.ExpenseTrackerDataSet.userbaseRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Expense_Tracker.ExpenseTrackerDataSetTableAdapters.expenseTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Expense_Tracker.ExpenseTrackerDataSetTableAdapters.incomeTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Expense_Tracker.ExpenseTrackerDataSetTableAdapters.userbaseTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Expense_Tracker.ExpenseTrackerDataSetTableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:Expense_Tracker.ExpenseTrackerDataSetTableAdapters.TableAdapterManager.UpdateUpdatedRows(Expense_Tracker.ExpenseTrackerDataSet,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:Expense_Tracker.ExpenseTrackerDataSetTableAdapters.TableAdapterManager.UpdateInsertedRows(Expense_Tracker.ExpenseTrackerDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:Expense_Tracker.ExpenseTrackerDataSetTableAdapters.TableAdapterManager.UpdateDeletedRows(Expense_Tracker.ExpenseTrackerDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:Expense_Tracker.ExpenseTrackerDataSetTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:Expense_Tracker.ExpenseTrackerDataSetTableAdapters.TableAdapterManager.UpdateAll(Expense_Tracker.ExpenseTrackerDataSet)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:Expense_Tracker.ExpenseTrackerDataSetTableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:Expense_Tracker.ExpenseTrackerDataSetTableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
+</members>
+</doc>
