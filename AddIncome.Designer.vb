@@ -33,6 +33,9 @@ Partial Class AddIncome
         Me.Label4 = New System.Windows.Forms.Label()
         Me.addincremark = New System.Windows.Forms.TextBox()
         Me.Label5 = New System.Windows.Forms.Label()
+        Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
+        Me.Label8 = New System.Windows.Forms.Label()
+        Me.Label9 = New System.Windows.Forms.Label()
         Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -87,7 +90,7 @@ Partial Class AddIncome
         Me.incaddbtn.FlatAppearance.BorderSize = 0
         Me.incaddbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.incaddbtn.Font = New System.Drawing.Font("Segoe UI Semibold", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.incaddbtn.Location = New System.Drawing.Point(322, 343)
+        Me.incaddbtn.Location = New System.Drawing.Point(322, 414)
         Me.incaddbtn.Name = "incaddbtn"
         Me.incaddbtn.Size = New System.Drawing.Size(95, 34)
         Me.incaddbtn.TabIndex = 15
@@ -122,7 +125,7 @@ Partial Class AddIncome
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.Color.White
-        Me.Label3.Location = New System.Drawing.Point(12, 186)
+        Me.Label3.Location = New System.Drawing.Point(12, 270)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(80, 28)
         Me.Label3.TabIndex = 18
@@ -132,7 +135,7 @@ Partial Class AddIncome
         '
         Me.Label4.BackColor = System.Drawing.Color.White
         Me.Label4.Font = New System.Drawing.Font("Segoe UI Light", 1.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(16, 224)
+        Me.Label4.Location = New System.Drawing.Point(16, 308)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(150, 2)
         Me.Label4.TabIndex = 19
@@ -144,28 +147,61 @@ Partial Class AddIncome
         Me.addincremark.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.addincremark.Font = New System.Drawing.Font("Segoe UI", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.addincremark.ForeColor = System.Drawing.Color.White
-        Me.addincremark.Location = New System.Drawing.Point(17, 238)
+        Me.addincremark.Location = New System.Drawing.Point(17, 336)
         Me.addincremark.Multiline = True
         Me.addincremark.Name = "addincremark"
-        Me.addincremark.Size = New System.Drawing.Size(400, 64)
+        Me.addincremark.Size = New System.Drawing.Size(400, 41)
         Me.addincremark.TabIndex = 20
+        Me.addincremark.Text = "Type here"
         '
         'Label5
         '
         Me.Label5.BackColor = System.Drawing.Color.White
         Me.Label5.Font = New System.Drawing.Font("Segoe UI Light", 1.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(16, 305)
+        Me.Label5.Location = New System.Drawing.Point(16, 380)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(400, 2)
         Me.Label5.TabIndex = 21
         Me.Label5.UseMnemonic = False
+        '
+        'DateTimePicker1
+        '
+        Me.DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
+        Me.DateTimePicker1.Location = New System.Drawing.Point(225, 192)
+        Me.DateTimePicker1.Name = "DateTimePicker1"
+        Me.DateTimePicker1.Size = New System.Drawing.Size(108, 27)
+        Me.DateTimePicker1.TabIndex = 35
+        '
+        'Label8
+        '
+        Me.Label8.BackColor = System.Drawing.Color.White
+        Me.Label8.Font = New System.Drawing.Font("Segoe UI Light", 1.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label8.Location = New System.Drawing.Point(16, 232)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(350, 2)
+        Me.Label8.TabIndex = 34
+        Me.Label8.UseMnemonic = False
+        '
+        'Label9
+        '
+        Me.Label9.AutoSize = True
+        Me.Label9.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label9.ForeColor = System.Drawing.Color.White
+        Me.Label9.Location = New System.Drawing.Point(12, 194)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(54, 28)
+        Me.Label9.TabIndex = 33
+        Me.Label9.Text = "Date"
         '
         'AddIncome
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(27, Byte), Integer), CType(CType(43, Byte), Integer), CType(CType(84, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(431, 410)
+        Me.ClientSize = New System.Drawing.Size(431, 466)
+        Me.Controls.Add(Me.DateTimePicker1)
+        Me.Controls.Add(Me.Label8)
+        Me.Controls.Add(Me.Label9)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.addincremark)
         Me.Controls.Add(Me.Label4)
@@ -200,4 +236,7 @@ Partial Class AddIncome
     Friend WithEvents Label4 As Label
     Friend WithEvents addincremark As TextBox
     Friend WithEvents Label5 As Label
+    Friend WithEvents DateTimePicker1 As DateTimePicker
+    Friend WithEvents Label8 As Label
+    Friend WithEvents Label9 As Label
 End Class

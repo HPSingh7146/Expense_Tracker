@@ -12,9 +12,14 @@ Public Class AddExpenses
 
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles expaddbtn.Click
         Dim amount As Integer = expfield.Text
+        If (expremark.Text = "Type here") Then
+            expremark.Text = ""
+        End If
         Dim exp_remark As String = expremark.Text
         Dim category As String = categoriescbox.Text
         Dim user As String = LoginPage.user
+        DateTimePicker1.Value = DateTime.Now
+        Dim expdate As String = DateTimePicker1.Value.ToString("dd-MM-yyyy")
         Try
             Using connection As New SqlConnection(connectionString)
                 connection.Open()
@@ -26,7 +31,7 @@ Public Class AddExpenses
                     command.Parameters.AddWithValue("@amount", amount)
                     command.Parameters.AddWithValue("@category", category)
                     command.Parameters.AddWithValue("@exp_remark", exp_remark)
-                    command.Parameters.AddWithValue("@date", String.Format("{0:dd/MM/yyyy}", DateTime.Now))
+                    command.Parameters.AddWithValue("@date", expdate)
 
                     Dim rowsAffected As Integer = command.ExecuteNonQuery()
                     If rowsAffected > 0 Then
@@ -46,5 +51,9 @@ Public Class AddExpenses
 
     Private Sub expfield_Click(sender As Object, e As EventArgs) Handles expfield.Click
         expfield.Clear()
+    End Sub
+
+    Private Sub expremark_Click(sender As Object, e As EventArgs) Handles expremark.Click
+        expremark.Clear()
     End Sub
 End Class

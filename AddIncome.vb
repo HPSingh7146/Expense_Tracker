@@ -17,8 +17,13 @@ Public Class AddIncome
 
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles incaddbtn.Click
         Dim income As Decimal = incfield.Text
+        If (addincremark.Text = "Type here") Then
+            addincremark.Text = ""
+        End If
         Dim remark As String = addincremark.Text
         Dim username As String = LoginPage.user
+        DateTimePicker1.Value = DateTime.Now
+        Dim incdate As String = DateTimePicker1.Value.ToString("dd-MM-yyyy")
         Try
             Using connection As New SqlConnection(connectionString)
                 connection.Open()
@@ -29,7 +34,7 @@ Public Class AddIncome
                     command.Parameters.AddWithValue("@username", username)
                     command.Parameters.AddWithValue("@amount", income)
                     command.Parameters.AddWithValue("@inc_remark", remark)
-                    command.Parameters.AddWithValue("@date", String.Format("{0:dd/MM/yyyy}", DateTime.Now))
+                    command.Parameters.AddWithValue("@date", incdate)
 
                     Dim rowsAffected As Integer = command.ExecuteNonQuery()
                     If rowsAffected > 0 Then
@@ -48,4 +53,7 @@ Public Class AddIncome
 
     End Sub
 
+    Private Sub addincremark_Click(sender As Object, e As EventArgs) Handles addincremark.Click
+        addincremark.Clear()
+    End Sub
 End Class

@@ -38,7 +38,7 @@ Partial Class AddExpenses
         Me.expaddbtn = New System.Windows.Forms.Button()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.Label9 = New System.Windows.Forms.Label()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
         Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -132,6 +132,7 @@ Partial Class AddExpenses
         Me.expremark.Name = "expremark"
         Me.expremark.Size = New System.Drawing.Size(400, 39)
         Me.expremark.TabIndex = 24
+        Me.expremark.Text = "Type here"
         '
         'Label4
         '
@@ -217,22 +218,17 @@ Partial Class AddExpenses
         Me.Label9.ForeColor = System.Drawing.Color.White
         Me.Label9.Location = New System.Drawing.Point(23, 334)
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(151, 28)
+        Me.Label9.Size = New System.Drawing.Size(54, 28)
         Me.Label9.TabIndex = 30
-        Me.Label9.Text = "Add Categories"
+        Me.Label9.Text = "Date"
         '
-        'Button1
+        'DateTimePicker1
         '
-        Me.Button1.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(112, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Button1.FlatAppearance.BorderSize = 0
-        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button1.Font = New System.Drawing.Font("Segoe UI Semibold", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.Location = New System.Drawing.Point(253, 333)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(95, 34)
-        Me.Button1.TabIndex = 32
-        Me.Button1.Text = "Add"
-        Me.Button1.UseVisualStyleBackColor = False
+        Me.DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
+        Me.DateTimePicker1.Location = New System.Drawing.Point(236, 332)
+        Me.DateTimePicker1.Name = "DateTimePicker1"
+        Me.DateTimePicker1.Size = New System.Drawing.Size(108, 31)
+        Me.DateTimePicker1.TabIndex = 32
         '
         'AddExpenses
         '
@@ -240,7 +236,7 @@ Partial Class AddExpenses
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(27, Byte), Integer), CType(CType(43, Byte), Integer), CType(CType(84, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(440, 558)
-        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.DateTimePicker1)
         Me.Controls.Add(Me.Label8)
         Me.Controls.Add(Me.Label9)
         Me.Controls.Add(Me.expaddbtn)
@@ -285,5 +281,5 @@ Partial Class AddExpenses
     Friend WithEvents expaddbtn As Button
     Friend WithEvents Label8 As Label
     Friend WithEvents Label9 As Label
-    Friend WithEvents Button1 As Button
+    Friend WithEvents DateTimePicker1 As DateTimePicker
 End Class
