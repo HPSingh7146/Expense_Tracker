@@ -23,11 +23,11 @@ Public Class LoginPage
     'Register Button
     Private Sub regbtn_Click(sender As Object, e As EventArgs) Handles regbtn.Click
         regpnl.Show()
+        UsernameTxtbox.Text = ""
+        PasswordTxtbox.Text = ""
     End Sub
 
     Private Sub logbtn_Click(sender As Object, e As EventArgs) Handles logbtn.Click
-        UsernameTxtbox.Text = "harsh123"
-        PasswordTxtbox.Text = "harsh@123"
         Dim Username As String = UsernameTxtbox.Text
         Dim Password As String = PasswordTxtbox.Text
 
@@ -52,6 +52,8 @@ Public Class LoginPage
                             user = Username
                             MsgBox("Login successful")
                             Me.Hide()
+                            UsernameTxtbox.Text = ""
+                            PasswordTxtbox.Text = ""
                             Dashboard.Show()
                         Else
                             MsgBox("Incorrect Credentials" + vbCrLf + Username + vbCrLf + Password)
@@ -69,12 +71,11 @@ Public Class LoginPage
 
     End Sub
 
-    Private Sub Panel3_Paint(sender As Object, e As PaintEventArgs) Handles regpnl.Paint
-
-    End Sub
-
     Private Sub loginnow_Click(sender As Object, e As EventArgs) Handles loginnow.Click
         regpnl.Hide()
+        regnametxtbox.Text = ""
+        regunametxtbox.Text = ""
+        regpasstxtbox.Text = ""
     End Sub
 
     Private Sub register_Click(sender As Object, e As EventArgs) Handles register.Click
@@ -96,8 +97,14 @@ Public Class LoginPage
                     Dim rowsAffected As Integer = command.ExecuteNonQuery()
                     If rowsAffected > 0 Then
                         MessageBox.Show("User successfully added to the database.")
+                        regnametxtbox.Text = ""
+                        regunametxtbox.Text = ""
+                        regpasstxtbox.Text = ""
                     Else
                         MessageBox.Show("Failed to add user to the database.")
+                        regnametxtbox.Text = ""
+                        regunametxtbox.Text = ""
+                        regpasstxtbox.Text = ""
                     End If
                 End Using
             End Using

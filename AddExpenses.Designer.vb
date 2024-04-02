@@ -161,7 +161,7 @@ Partial Class AddExpenses
         Me.categoriescbox.FlatStyle = System.Windows.Forms.FlatStyle.System
         Me.categoriescbox.ForeColor = System.Drawing.Color.Black
         Me.categoriescbox.FormattingEnabled = True
-        Me.categoriescbox.Items.AddRange(New Object() {"Fee", "Shopping", "Food"})
+        Me.categoriescbox.Items.AddRange(New Object() {"Fee", "Shopping", "Food", "Education", "Entertainment", "Transportation", "Saving,Investment", "Medical and Healthcare", "Utilities", "Housing", "Insurance"})
         Me.categoriescbox.Location = New System.Drawing.Point(209, 244)
         Me.categoriescbox.Name = "categoriescbox"
         Me.categoriescbox.Size = New System.Drawing.Size(217, 33)

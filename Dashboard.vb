@@ -167,5 +167,8 @@ Public Class Dashboard
         Return dataTable
     End Function
 
-
+    Private Sub logoutbtn_Click(sender As Object, e As EventArgs) Handles logoutbtn.Click
+        Me.Close()
+        LoginPage.Show()
+    End Sub
 End Class

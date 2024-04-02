@@ -12,7 +12,6 @@ Public Class Overview
     End Sub
 
     Private Sub Overview_Load(sender As Object, e As EventArgs) Handles Me.Load
-
         Dim totalincome As Decimal = 0.00
         Dim totalexpense As Decimal = 0.00
 

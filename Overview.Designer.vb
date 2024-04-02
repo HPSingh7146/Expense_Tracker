@@ -170,7 +170,7 @@ Partial Class Overview
         'ComboBox1
         '
         Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Items.AddRange(New Object() {"fee", "school"})
+        Me.ComboBox1.Items.AddRange(New Object() {"Fee", "Shopping", "Food", "Education", "Entertainment", "Transportation", "Saving,Investment", "Medical and Healthcare", "Utilities", "Housing", "Insurance"})
         Me.ComboBox1.Location = New System.Drawing.Point(60, 55)
         Me.ComboBox1.Name = "ComboBox1"
         Me.ComboBox1.Size = New System.Drawing.Size(223, 31)

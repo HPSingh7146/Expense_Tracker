@@ -56,6 +56,7 @@ Partial Class Dashboard
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
         Me.ExpenseTrackerDataSetBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.ExpenseBindingSource2 = New System.Windows.Forms.BindingSource(Me.components)
+        Me.logoutbtn = New System.Windows.Forms.Button()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
         Me.Panel5.SuspendLayout()
@@ -71,6 +72,7 @@ Partial Class Dashboard
         'Panel1
         '
         Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(34, Byte), Integer), CType(CType(55, Byte), Integer), CType(CType(103, Byte), Integer))
+        Me.Panel1.Controls.Add(Me.logoutbtn)
         Me.Panel1.Controls.Add(Me.Button1)
         Me.Panel1.Controls.Add(Me.Label1)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
@@ -403,6 +405,19 @@ Partial Class Dashboard
         Me.ExpenseBindingSource2.DataMember = "expense"
         Me.ExpenseBindingSource2.DataSource = Me.ExpenseTrackerDataSetBindingSource
         '
+        'logoutbtn
+        '
+        Me.logoutbtn.FlatAppearance.BorderSize = 0
+        Me.logoutbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.logoutbtn.Font = New System.Drawing.Font("Segoe UI", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.logoutbtn.ForeColor = System.Drawing.Color.Crimson
+        Me.logoutbtn.Location = New System.Drawing.Point(894, -1)
+        Me.logoutbtn.Name = "logoutbtn"
+        Me.logoutbtn.Size = New System.Drawing.Size(88, 48)
+        Me.logoutbtn.TabIndex = 2
+        Me.logoutbtn.Text = "Logout"
+        Me.logoutbtn.UseVisualStyleBackColor = True
+        '
         'Dashboard
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 17.0!)
@@ -471,4 +486,5 @@ Partial Class Dashboard
     Friend WithEvents DataGridView1 As DataGridView
     Friend WithEvents ExpenseBindingSource2 As BindingSource
     Friend WithEvents ExpenseTrackerDataSetBindingSource As BindingSource
+    Friend WithEvents logoutbtn As Button
 End Class

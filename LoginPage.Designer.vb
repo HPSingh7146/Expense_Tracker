@@ -24,6 +24,18 @@ Partial Class LoginPage
     Private Sub InitializeComponent()
         Me.BackgroundWorker1 = New System.ComponentModel.BackgroundWorker()
         Me.logpnl = New System.Windows.Forms.Panel()
+        Me.regpnl = New System.Windows.Forms.Panel()
+        Me.register = New System.Windows.Forms.Button()
+        Me.loginnow = New System.Windows.Forms.Button()
+        Me.Label9 = New System.Windows.Forms.Label()
+        Me.Label10 = New System.Windows.Forms.Label()
+        Me.regnametxtbox = New System.Windows.Forms.TextBox()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.Label8 = New System.Windows.Forms.Label()
+        Me.regpasstxtbox = New System.Windows.Forms.TextBox()
+        Me.regunametxtbox = New System.Windows.Forms.TextBox()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label24 = New System.Windows.Forms.Label()
         Me.regbtn = New System.Windows.Forms.Button()
@@ -36,22 +48,10 @@ Partial Class LoginPage
         Me.Label1 = New System.Windows.Forms.Label()
         Me.logExit = New System.Windows.Forms.Button()
         Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.regpnl = New System.Windows.Forms.Panel()
-        Me.Label5 = New System.Windows.Forms.Label()
-        Me.Label6 = New System.Windows.Forms.Label()
-        Me.Label7 = New System.Windows.Forms.Label()
-        Me.Label8 = New System.Windows.Forms.Label()
-        Me.regpasstxtbox = New System.Windows.Forms.TextBox()
-        Me.regunametxtbox = New System.Windows.Forms.TextBox()
-        Me.Label9 = New System.Windows.Forms.Label()
-        Me.Label10 = New System.Windows.Forms.Label()
-        Me.regnametxtbox = New System.Windows.Forms.TextBox()
-        Me.loginnow = New System.Windows.Forms.Button()
-        Me.register = New System.Windows.Forms.Button()
         Me.logpnl.SuspendLayout()
+        Me.regpnl.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel1.SuspendLayout()
-        Me.regpnl.SuspendLayout()
         Me.SuspendLayout()
         '
         'logpnl
@@ -71,6 +71,153 @@ Partial Class LoginPage
         Me.logpnl.Name = "logpnl"
         Me.logpnl.Size = New System.Drawing.Size(513, 438)
         Me.logpnl.TabIndex = 0
+        '
+        'regpnl
+        '
+        Me.regpnl.BackColor = System.Drawing.Color.FromArgb(CType(CType(21, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(66, Byte), Integer))
+        Me.regpnl.Controls.Add(Me.register)
+        Me.regpnl.Controls.Add(Me.loginnow)
+        Me.regpnl.Controls.Add(Me.Label9)
+        Me.regpnl.Controls.Add(Me.Label10)
+        Me.regpnl.Controls.Add(Me.regnametxtbox)
+        Me.regpnl.Controls.Add(Me.Label5)
+        Me.regpnl.Controls.Add(Me.Label6)
+        Me.regpnl.Controls.Add(Me.Label7)
+        Me.regpnl.Controls.Add(Me.Label8)
+        Me.regpnl.Controls.Add(Me.regpasstxtbox)
+        Me.regpnl.Controls.Add(Me.regunametxtbox)
+        Me.regpnl.Location = New System.Drawing.Point(3, 3)
+        Me.regpnl.Name = "regpnl"
+        Me.regpnl.Size = New System.Drawing.Size(507, 432)
+        Me.regpnl.TabIndex = 9
+        '
+        'register
+        '
+        Me.register.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(112, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.register.FlatAppearance.BorderSize = 0
+        Me.register.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.register.Font = New System.Drawing.Font("Segoe UI Semibold", 10.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.register.ForeColor = System.Drawing.Color.White
+        Me.register.Location = New System.Drawing.Point(257, 358)
+        Me.register.Name = "register"
+        Me.register.Size = New System.Drawing.Size(197, 55)
+        Me.register.TabIndex = 11
+        Me.register.Text = "Register"
+        Me.register.UseVisualStyleBackColor = False
+        '
+        'loginnow
+        '
+        Me.loginnow.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(112, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.loginnow.FlatAppearance.BorderSize = 0
+        Me.loginnow.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.loginnow.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.loginnow.ForeColor = System.Drawing.Color.White
+        Me.loginnow.Location = New System.Drawing.Point(55, 358)
+        Me.loginnow.Name = "loginnow"
+        Me.loginnow.Size = New System.Drawing.Size(184, 55)
+        Me.loginnow.TabIndex = 10
+        Me.loginnow.Text = "Login Page"
+        Me.loginnow.UseVisualStyleBackColor = False
+        '
+        'Label9
+        '
+        Me.Label9.BackColor = System.Drawing.Color.White
+        Me.Label9.Font = New System.Drawing.Font("Segoe UI Light", 1.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label9.Location = New System.Drawing.Point(58, 154)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(400, 2)
+        Me.Label9.TabIndex = 17
+        Me.Label9.UseMnemonic = False
+        '
+        'Label10
+        '
+        Me.Label10.AutoSize = True
+        Me.Label10.Font = New System.Drawing.Font("Segoe UI", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label10.ForeColor = System.Drawing.Color.White
+        Me.Label10.Location = New System.Drawing.Point(220, 87)
+        Me.Label10.Name = "Label10"
+        Me.Label10.Size = New System.Drawing.Size(57, 23)
+        Me.Label10.TabIndex = 16
+        Me.Label10.Text = "Name"
+        '
+        'regnametxtbox
+        '
+        Me.regnametxtbox.BackColor = System.Drawing.Color.FromArgb(CType(CType(21, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(66, Byte), Integer))
+        Me.regnametxtbox.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.regnametxtbox.Font = New System.Drawing.Font("Segoe UI", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.regnametxtbox.ForeColor = System.Drawing.Color.White
+        Me.regnametxtbox.Location = New System.Drawing.Point(59, 122)
+        Me.regnametxtbox.Multiline = True
+        Me.regnametxtbox.Name = "regnametxtbox"
+        Me.regnametxtbox.Size = New System.Drawing.Size(399, 35)
+        Me.regnametxtbox.TabIndex = 15
+        '
+        'Label5
+        '
+        Me.Label5.BackColor = System.Drawing.Color.White
+        Me.Label5.Font = New System.Drawing.Font("Segoe UI Light", 1.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.Location = New System.Drawing.Point(58, 325)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(400, 2)
+        Me.Label5.TabIndex = 14
+        Me.Label5.UseMnemonic = False
+        '
+        'Label6
+        '
+        Me.Label6.BackColor = System.Drawing.Color.White
+        Me.Label6.Font = New System.Drawing.Font("Segoe UI Light", 1.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label6.Location = New System.Drawing.Point(58, 245)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(400, 2)
+        Me.Label6.TabIndex = 13
+        Me.Label6.UseMnemonic = False
+        '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.Font = New System.Drawing.Font("Segoe UI", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label7.ForeColor = System.Drawing.Color.White
+        Me.Label7.Location = New System.Drawing.Point(208, 270)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(85, 23)
+        Me.Label7.TabIndex = 12
+        Me.Label7.Text = "Password"
+        '
+        'Label8
+        '
+        Me.Label8.AutoSize = True
+        Me.Label8.Font = New System.Drawing.Font("Segoe UI", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label8.ForeColor = System.Drawing.Color.White
+        Me.Label8.Location = New System.Drawing.Point(208, 184)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(89, 23)
+        Me.Label8.TabIndex = 11
+        Me.Label8.Text = "Username"
+        '
+        'regpasstxtbox
+        '
+        Me.regpasstxtbox.BackColor = System.Drawing.Color.FromArgb(CType(CType(21, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(66, Byte), Integer))
+        Me.regpasstxtbox.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.regpasstxtbox.Font = New System.Drawing.Font("Segoe UI", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.regpasstxtbox.ForeColor = System.Drawing.Color.White
+        Me.regpasstxtbox.Location = New System.Drawing.Point(59, 297)
+        Me.regpasstxtbox.Multiline = True
+        Me.regpasstxtbox.Name = "regpasstxtbox"
+        Me.regpasstxtbox.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
+        Me.regpasstxtbox.Size = New System.Drawing.Size(399, 35)
+        Me.regpasstxtbox.TabIndex = 10
+        '
+        'regunametxtbox
+        '
+        Me.regunametxtbox.BackColor = System.Drawing.Color.FromArgb(CType(CType(21, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(66, Byte), Integer))
+        Me.regunametxtbox.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.regunametxtbox.Font = New System.Drawing.Font("Segoe UI", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.regunametxtbox.ForeColor = System.Drawing.Color.White
+        Me.regunametxtbox.Location = New System.Drawing.Point(59, 213)
+        Me.regunametxtbox.Multiline = True
+        Me.regunametxtbox.Name = "regunametxtbox"
+        Me.regunametxtbox.Size = New System.Drawing.Size(399, 35)
+        Me.regunametxtbox.TabIndex = 9
         '
         'Label4
         '
@@ -212,153 +359,6 @@ Partial Class LoginPage
         Me.Panel1.Size = New System.Drawing.Size(613, 80)
         Me.Panel1.TabIndex = 0
         '
-        'regpnl
-        '
-        Me.regpnl.BackColor = System.Drawing.Color.FromArgb(CType(CType(21, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(66, Byte), Integer))
-        Me.regpnl.Controls.Add(Me.register)
-        Me.regpnl.Controls.Add(Me.loginnow)
-        Me.regpnl.Controls.Add(Me.Label9)
-        Me.regpnl.Controls.Add(Me.Label10)
-        Me.regpnl.Controls.Add(Me.regnametxtbox)
-        Me.regpnl.Controls.Add(Me.Label5)
-        Me.regpnl.Controls.Add(Me.Label6)
-        Me.regpnl.Controls.Add(Me.Label7)
-        Me.regpnl.Controls.Add(Me.Label8)
-        Me.regpnl.Controls.Add(Me.regpasstxtbox)
-        Me.regpnl.Controls.Add(Me.regunametxtbox)
-        Me.regpnl.Location = New System.Drawing.Point(3, 3)
-        Me.regpnl.Name = "regpnl"
-        Me.regpnl.Size = New System.Drawing.Size(507, 432)
-        Me.regpnl.TabIndex = 9
-        '
-        'Label5
-        '
-        Me.Label5.BackColor = System.Drawing.Color.White
-        Me.Label5.Font = New System.Drawing.Font("Segoe UI Light", 1.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(58, 325)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(400, 2)
-        Me.Label5.TabIndex = 14
-        Me.Label5.UseMnemonic = False
-        '
-        'Label6
-        '
-        Me.Label6.BackColor = System.Drawing.Color.White
-        Me.Label6.Font = New System.Drawing.Font("Segoe UI Light", 1.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.Location = New System.Drawing.Point(58, 245)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(400, 2)
-        Me.Label6.TabIndex = 13
-        Me.Label6.UseMnemonic = False
-        '
-        'Label7
-        '
-        Me.Label7.AutoSize = True
-        Me.Label7.Font = New System.Drawing.Font("Segoe UI", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.ForeColor = System.Drawing.Color.White
-        Me.Label7.Location = New System.Drawing.Point(208, 270)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(85, 23)
-        Me.Label7.TabIndex = 12
-        Me.Label7.Text = "Password"
-        '
-        'Label8
-        '
-        Me.Label8.AutoSize = True
-        Me.Label8.Font = New System.Drawing.Font("Segoe UI", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label8.ForeColor = System.Drawing.Color.White
-        Me.Label8.Location = New System.Drawing.Point(208, 184)
-        Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(89, 23)
-        Me.Label8.TabIndex = 11
-        Me.Label8.Text = "Username"
-        '
-        'regpasstxtbox
-        '
-        Me.regpasstxtbox.BackColor = System.Drawing.Color.FromArgb(CType(CType(21, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(66, Byte), Integer))
-        Me.regpasstxtbox.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.regpasstxtbox.Font = New System.Drawing.Font("Segoe UI", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.regpasstxtbox.ForeColor = System.Drawing.Color.White
-        Me.regpasstxtbox.Location = New System.Drawing.Point(59, 297)
-        Me.regpasstxtbox.Multiline = True
-        Me.regpasstxtbox.Name = "regpasstxtbox"
-        Me.regpasstxtbox.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
-        Me.regpasstxtbox.Size = New System.Drawing.Size(399, 35)
-        Me.regpasstxtbox.TabIndex = 10
-        '
-        'regunametxtbox
-        '
-        Me.regunametxtbox.BackColor = System.Drawing.Color.FromArgb(CType(CType(21, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(66, Byte), Integer))
-        Me.regunametxtbox.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.regunametxtbox.Font = New System.Drawing.Font("Segoe UI", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.regunametxtbox.ForeColor = System.Drawing.Color.White
-        Me.regunametxtbox.Location = New System.Drawing.Point(59, 213)
-        Me.regunametxtbox.Multiline = True
-        Me.regunametxtbox.Name = "regunametxtbox"
-        Me.regunametxtbox.Size = New System.Drawing.Size(399, 35)
-        Me.regunametxtbox.TabIndex = 9
-        '
-        'Label9
-        '
-        Me.Label9.BackColor = System.Drawing.Color.White
-        Me.Label9.Font = New System.Drawing.Font("Segoe UI Light", 1.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label9.Location = New System.Drawing.Point(58, 154)
-        Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(400, 2)
-        Me.Label9.TabIndex = 17
-        Me.Label9.UseMnemonic = False
-        '
-        'Label10
-        '
-        Me.Label10.AutoSize = True
-        Me.Label10.Font = New System.Drawing.Font("Segoe UI", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label10.ForeColor = System.Drawing.Color.White
-        Me.Label10.Location = New System.Drawing.Point(220, 87)
-        Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(57, 23)
-        Me.Label10.TabIndex = 16
-        Me.Label10.Text = "Name"
-        '
-        'regnametxtbox
-        '
-        Me.regnametxtbox.BackColor = System.Drawing.Color.FromArgb(CType(CType(21, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(66, Byte), Integer))
-        Me.regnametxtbox.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.regnametxtbox.Font = New System.Drawing.Font("Segoe UI", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.regnametxtbox.ForeColor = System.Drawing.Color.White
-        Me.regnametxtbox.Location = New System.Drawing.Point(59, 122)
-        Me.regnametxtbox.Multiline = True
-        Me.regnametxtbox.Name = "regnametxtbox"
-        Me.regnametxtbox.Size = New System.Drawing.Size(399, 35)
-        Me.regnametxtbox.TabIndex = 15
-        '
-        'loginnow
-        '
-        Me.loginnow.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(112, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.loginnow.FlatAppearance.BorderSize = 0
-        Me.loginnow.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.loginnow.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.loginnow.ForeColor = System.Drawing.Color.White
-        Me.loginnow.Location = New System.Drawing.Point(55, 358)
-        Me.loginnow.Name = "loginnow"
-        Me.loginnow.Size = New System.Drawing.Size(184, 55)
-        Me.loginnow.TabIndex = 10
-        Me.loginnow.Text = "Login Page"
-        Me.loginnow.UseVisualStyleBackColor = False
-        '
-        'register
-        '
-        Me.register.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(112, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.register.FlatAppearance.BorderSize = 0
-        Me.register.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.register.Font = New System.Drawing.Font("Segoe UI Semibold", 10.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.register.ForeColor = System.Drawing.Color.White
-        Me.register.Location = New System.Drawing.Point(257, 358)
-        Me.register.Name = "register"
-        Me.register.Size = New System.Drawing.Size(197, 55)
-        Me.register.TabIndex = 11
-        Me.register.Text = "Register"
-        Me.register.UseVisualStyleBackColor = False
-        '
         'LoginPage
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
@@ -373,11 +373,11 @@ Partial Class LoginPage
         Me.Text = "LoginPage"
         Me.logpnl.ResumeLayout(False)
         Me.logpnl.PerformLayout()
+        Me.regpnl.ResumeLayout(False)
+        Me.regpnl.PerformLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
-        Me.regpnl.ResumeLayout(False)
-        Me.regpnl.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
