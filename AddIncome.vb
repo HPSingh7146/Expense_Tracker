@@ -56,4 +56,13 @@ Public Class AddIncome
     Private Sub addincremark_Click(sender As Object, e As EventArgs) Handles addincremark.Click
         addincremark.Clear()
     End Sub
+
+    Private Sub incfield_KeyPress(sender As Object, e As KeyPressEventArgs) Handles incfield.KeyPress
+        ' Check if the entered key is not a digit and not a control key
+        If Not Char.IsDigit(e.KeyChar) AndAlso Not Char.IsControl(e.KeyChar) Then
+            MsgBox("Ony Numbers")
+            ' Suppress the key press
+            e.Handled = True
+        End If
+    End Sub
 End Class
