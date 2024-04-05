@@ -27,15 +27,17 @@ Partial Class Delete_Entries
         Me.overviewExitbtn = New System.Windows.Forms.Button()
         Me.TabControl1 = New System.Windows.Forms.TabControl()
         Me.TabPage1 = New System.Windows.Forms.TabPage()
-        Me.TabPage2 = New System.Windows.Forms.TabPage()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.Label8 = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.DeleteExp = New System.Windows.Forms.Button()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
+        Me.ExpId = New System.Windows.Forms.TextBox()
+        Me.Label8 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.TabPage2 = New System.Windows.Forms.TabPage()
+        Me.Label9 = New System.Windows.Forms.Label()
+        Me.DeleteInc = New System.Windows.Forms.Button()
         Me.Label4 = New System.Windows.Forms.Label()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.IncId = New System.Windows.Forms.TextBox()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Panel1.SuspendLayout()
@@ -93,9 +95,10 @@ Partial Class Delete_Entries
         'TabPage1
         '
         Me.TabPage1.BackColor = System.Drawing.Color.FromArgb(CType(CType(21, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(66, Byte), Integer))
-        Me.TabPage1.Controls.Add(Me.Button1)
+        Me.TabPage1.Controls.Add(Me.Label7)
+        Me.TabPage1.Controls.Add(Me.DeleteExp)
         Me.TabPage1.Controls.Add(Me.Label3)
-        Me.TabPage1.Controls.Add(Me.TextBox1)
+        Me.TabPage1.Controls.Add(Me.ExpId)
         Me.TabPage1.Controls.Add(Me.Label8)
         Me.TabPage1.Controls.Add(Me.Label2)
         Me.TabPage1.Location = New System.Drawing.Point(4, 32)
@@ -105,12 +108,75 @@ Partial Class Delete_Entries
         Me.TabPage1.TabIndex = 0
         Me.TabPage1.Text = "Expense"
         '
+        'Label7
+        '
+        Me.Label7.BackColor = System.Drawing.Color.White
+        Me.Label7.Font = New System.Drawing.Font("Segoe UI Light", 1.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label7.Location = New System.Drawing.Point(110, 142)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(113, 2)
+        Me.Label7.TabIndex = 21
+        Me.Label7.UseMnemonic = False
+        '
+        'DeleteExp
+        '
+        Me.DeleteExp.BackColor = System.Drawing.Color.Red
+        Me.DeleteExp.FlatAppearance.BorderSize = 0
+        Me.DeleteExp.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.DeleteExp.Location = New System.Drawing.Point(327, 156)
+        Me.DeleteExp.Name = "DeleteExp"
+        Me.DeleteExp.Size = New System.Drawing.Size(102, 30)
+        Me.DeleteExp.TabIndex = 11
+        Me.DeleteExp.Text = "Delete"
+        Me.DeleteExp.UseVisualStyleBackColor = False
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Location = New System.Drawing.Point(41, 115)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(41, 28)
+        Me.Label3.TabIndex = 10
+        Me.Label3.Text = "Id :"
+        '
+        'ExpId
+        '
+        Me.ExpId.BackColor = System.Drawing.Color.FromArgb(CType(CType(21, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(66, Byte), Integer))
+        Me.ExpId.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.ExpId.ForeColor = System.Drawing.Color.White
+        Me.ExpId.Location = New System.Drawing.Point(114, 113)
+        Me.ExpId.Name = "ExpId"
+        Me.ExpId.Size = New System.Drawing.Size(100, 23)
+        Me.ExpId.TabIndex = 9
+        '
+        'Label8
+        '
+        Me.Label8.BackColor = System.Drawing.Color.White
+        Me.Label8.Font = New System.Drawing.Font("Segoe UI Light", 1.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label8.Location = New System.Drawing.Point(0, 66)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(413, 2)
+        Me.Label8.TabIndex = 8
+        Me.Label8.UseMnemonic = False
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Font = New System.Drawing.Font("Segoe UI Semibold", 10.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Location = New System.Drawing.Point(-1, 36)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(372, 25)
+        Me.Label2.TabIndex = 0
+        Me.Label2.Text = "Enter the ID of Expense You Want to Delete"
+        '
         'TabPage2
         '
         Me.TabPage2.BackColor = System.Drawing.Color.FromArgb(CType(CType(21, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(66, Byte), Integer))
-        Me.TabPage2.Controls.Add(Me.Button2)
+        Me.TabPage2.Controls.Add(Me.Label9)
+        Me.TabPage2.Controls.Add(Me.DeleteInc)
         Me.TabPage2.Controls.Add(Me.Label4)
-        Me.TabPage2.Controls.Add(Me.TextBox2)
+        Me.TabPage2.Controls.Add(Me.IncId)
         Me.TabPage2.Controls.Add(Me.Label5)
         Me.TabPage2.Controls.Add(Me.Label6)
         Me.TabPage2.Location = New System.Drawing.Point(4, 32)
@@ -120,91 +186,53 @@ Partial Class Delete_Entries
         Me.TabPage2.TabIndex = 1
         Me.TabPage2.Text = "Income"
         '
-        'Label2
+        'Label9
         '
-        Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Segoe UI Semibold", 10.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(-1, 35)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(372, 25)
-        Me.Label2.TabIndex = 0
-        Me.Label2.Text = "Enter the ID of Expense You Want to Delete"
+        Me.Label9.BackColor = System.Drawing.Color.White
+        Me.Label9.Font = New System.Drawing.Font("Segoe UI Light", 1.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label9.Location = New System.Drawing.Point(110, 142)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(113, 2)
+        Me.Label9.TabIndex = 22
+        Me.Label9.UseMnemonic = False
         '
-        'Label8
+        'DeleteInc
         '
-        Me.Label8.BackColor = System.Drawing.Color.White
-        Me.Label8.Font = New System.Drawing.Font("Segoe UI Light", 1.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label8.Location = New System.Drawing.Point(0, 65)
-        Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(413, 2)
-        Me.Label8.TabIndex = 8
-        Me.Label8.UseMnemonic = False
-        '
-        'TextBox1
-        '
-        Me.TextBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox1.Location = New System.Drawing.Point(88, 113)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(100, 30)
-        Me.TextBox1.TabIndex = 9
-        '
-        'Label3
-        '
-        Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(8, 115)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(41, 28)
-        Me.Label3.TabIndex = 10
-        Me.Label3.Text = "Id :"
-        '
-        'Button1
-        '
-        Me.Button1.BackColor = System.Drawing.Color.Red
-        Me.Button1.FlatAppearance.BorderSize = 0
-        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button1.Location = New System.Drawing.Point(280, 113)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(102, 30)
-        Me.Button1.TabIndex = 11
-        Me.Button1.Text = "Delete"
-        Me.Button1.UseVisualStyleBackColor = False
-        '
-        'Button2
-        '
-        Me.Button2.BackColor = System.Drawing.Color.Red
-        Me.Button2.FlatAppearance.BorderSize = 0
-        Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button2.Location = New System.Drawing.Point(271, 121)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(102, 30)
-        Me.Button2.TabIndex = 16
-        Me.Button2.Text = "Delete"
-        Me.Button2.UseVisualStyleBackColor = False
+        Me.DeleteInc.BackColor = System.Drawing.Color.Red
+        Me.DeleteInc.FlatAppearance.BorderSize = 0
+        Me.DeleteInc.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.DeleteInc.Location = New System.Drawing.Point(327, 156)
+        Me.DeleteInc.Name = "DeleteInc"
+        Me.DeleteInc.Size = New System.Drawing.Size(102, 30)
+        Me.DeleteInc.TabIndex = 16
+        Me.DeleteInc.Text = "Delete"
+        Me.DeleteInc.UseVisualStyleBackColor = False
         '
         'Label4
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(20, 120)
+        Me.Label4.Location = New System.Drawing.Point(41, 115)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(41, 28)
         Me.Label4.TabIndex = 15
         Me.Label4.Text = "Id :"
         '
-        'TextBox2
+        'IncId
         '
-        Me.TextBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox2.Location = New System.Drawing.Point(100, 121)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(100, 30)
-        Me.TextBox2.TabIndex = 14
+        Me.IncId.BackColor = System.Drawing.Color.FromArgb(CType(CType(21, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(66, Byte), Integer))
+        Me.IncId.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.IncId.ForeColor = System.Drawing.Color.White
+        Me.IncId.Location = New System.Drawing.Point(113, 113)
+        Me.IncId.Name = "IncId"
+        Me.IncId.Size = New System.Drawing.Size(100, 23)
+        Me.IncId.TabIndex = 14
         '
         'Label5
         '
         Me.Label5.BackColor = System.Drawing.Color.White
         Me.Label5.Font = New System.Drawing.Font("Segoe UI Light", 1.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(0, 73)
+        Me.Label5.Location = New System.Drawing.Point(0, 66)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(413, 2)
         Me.Label5.TabIndex = 13
@@ -214,11 +242,11 @@ Partial Class Delete_Entries
         '
         Me.Label6.AutoSize = True
         Me.Label6.Font = New System.Drawing.Font("Segoe UI Semibold", 10.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.Location = New System.Drawing.Point(1, 43)
+        Me.Label6.Location = New System.Drawing.Point(-1, 36)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(363, 25)
+        Me.Label6.Size = New System.Drawing.Size(365, 25)
         Me.Label6.TabIndex = 12
-        Me.Label6.Text = "Enter the Id of Income You Want to Delete"
+        Me.Label6.Text = "Enter the ID of Income You Want to Delete"
         '
         'Delete_Entries
         '
@@ -253,13 +281,15 @@ Partial Class Delete_Entries
     Friend WithEvents TabPage1 As TabPage
     Friend WithEvents TabPage2 As TabPage
     Friend WithEvents Label2 As Label
-    Friend WithEvents Button1 As Button
+    Friend WithEvents DeleteExp As Button
     Friend WithEvents Label3 As Label
-    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents ExpId As TextBox
     Friend WithEvents Label8 As Label
-    Friend WithEvents Button2 As Button
+    Friend WithEvents DeleteInc As Button
     Friend WithEvents Label4 As Label
-    Friend WithEvents TextBox2 As TextBox
+    Friend WithEvents IncId As TextBox
     Friend WithEvents Label5 As Label
     Friend WithEvents Label6 As Label
+    Friend WithEvents Label7 As Label
+    Friend WithEvents Label9 As Label
 End Class

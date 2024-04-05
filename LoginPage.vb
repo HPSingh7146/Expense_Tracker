@@ -28,6 +28,9 @@ Public Class LoginPage
     End Sub
 
     Private Sub logbtn_Click(sender As Object, e As EventArgs) Handles logbtn.Click
+        UsernameTxtbox.Text = "harsh123"
+        PasswordTxtbox.Text = "harsh@123"
+
         Dim Username As String = UsernameTxtbox.Text
         Dim Password As String = PasswordTxtbox.Text
 

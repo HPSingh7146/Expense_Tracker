@@ -56,4 +56,13 @@ Public Class AddExpenses
     Private Sub expremark_Click(sender As Object, e As EventArgs) Handles expremark.Click
         expremark.Clear()
     End Sub
+
+    Private Sub expfield_KeyPress(sender As Object, e As KeyPressEventArgs) Handles expfield.KeyPress
+        ' Check if the entered key is not a digit and not a control key
+        If Not Char.IsDigit(e.KeyChar) AndAlso Not Char.IsControl(e.KeyChar) Then
+            ' Suppress the key press
+            MsgBox("Ony Numbers")
+            e.Handled = True
+        End If
+    End Sub
 End Class
