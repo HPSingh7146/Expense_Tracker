@@ -48,6 +48,7 @@ Partial Class Overview
         Me.endDateinc = New System.Windows.Forms.DateTimePicker()
         Me.startDateinc = New System.Windows.Forms.DateTimePicker()
         Me.inctotal = New System.Windows.Forms.Label()
+        Me.Button1 = New System.Windows.Forms.Button()
         Me.Panel1.SuspendLayout()
         Me.TabControl1.SuspendLayout()
         Me.TabPage1.SuspendLayout()
@@ -61,6 +62,7 @@ Partial Class Overview
         'Panel1
         '
         Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(34, Byte), Integer), CType(CType(55, Byte), Integer), CType(CType(103, Byte), Integer))
+        Me.Panel1.Controls.Add(Me.Button1)
         Me.Panel1.Controls.Add(Me.Label1)
         Me.Panel1.Controls.Add(Me.overviewExitbtn)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
@@ -160,7 +162,7 @@ Partial Class Overview
         Me.expreset.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.expreset.Font = New System.Drawing.Font("Segoe UI Semibold", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.expreset.ForeColor = System.Drawing.Color.White
-        Me.expreset.Location = New System.Drawing.Point(798, 30)
+        Me.expreset.Location = New System.Drawing.Point(798, 7)
         Me.expreset.Name = "expreset"
         Me.expreset.Size = New System.Drawing.Size(95, 34)
         Me.expreset.TabIndex = 29
@@ -375,6 +377,20 @@ Partial Class Overview
         Me.inctotal.Text = "0.00"
         Me.inctotal.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
+        'Button1
+        '
+        Me.Button1.BackColor = System.Drawing.Color.Transparent
+        Me.Button1.FlatAppearance.BorderSize = 0
+        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button1.Font = New System.Drawing.Font("Segoe UI", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button1.ForeColor = System.Drawing.Color.Red
+        Me.Button1.Location = New System.Drawing.Point(899, 2)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(129, 47)
+        Me.Button1.TabIndex = 2
+        Me.Button1.Text = "Delete Entries"
+        Me.Button1.UseVisualStyleBackColor = False
+        '
         'Overview
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 20.0!)
@@ -430,4 +446,5 @@ Partial Class Overview
     Friend WithEvents ComboBox1 As ComboBox
     Friend WithEvents expreset As Button
     Friend WithEvents increset As Button
+    Friend WithEvents Button1 As Button
 End Class

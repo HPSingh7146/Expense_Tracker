@@ -41,11 +41,11 @@ Public Class Overview
 
         ' Load expense data into DataGridView
         Try
-            Dim expenseQuery As String = "SELECT amount, category, exp_remark, date FROM expense WHERE username = @username"
+            Dim expenseQuery As String = "SELECT id, amount, category, exp_remark, date FROM expense WHERE username = @username"
             DataGridView1.DataSource = getDataTable(expenseQuery, LoginPage.user)
 
             'load income
-            Dim incomeQuery As String = "SELECT amount, inc_remark, date FROM income WHERE username = @username"
+            Dim incomeQuery As String = "SELECT id, amount, inc_remark, date FROM income WHERE username = @username"
             DataGridView2.DataSource = getDataTable(incomeQuery, LoginPage.user)
 
             ' Adjust the width of columns to fit their content
@@ -216,5 +216,10 @@ Public Class Overview
         Catch ex As Exception
             MsgBox("Error loading expense data: " & ex.Message)
         End Try
+    End Sub
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        Me.Close()
+        Delete_Entries.Show()
     End Sub
 End Class
