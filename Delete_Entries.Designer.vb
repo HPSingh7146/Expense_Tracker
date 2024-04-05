@@ -154,9 +154,9 @@ Partial Class Delete_Entries
         '
         Me.Label8.BackColor = System.Drawing.Color.White
         Me.Label8.Font = New System.Drawing.Font("Segoe UI Light", 1.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label8.Location = New System.Drawing.Point(0, 66)
+        Me.Label8.Location = New System.Drawing.Point(12, 66)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(413, 2)
+        Me.Label8.Size = New System.Drawing.Size(398, 2)
         Me.Label8.TabIndex = 8
         Me.Label8.UseMnemonic = False
         '
@@ -164,7 +164,7 @@ Partial Class Delete_Entries
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Segoe UI Semibold", 10.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(-1, 36)
+        Me.Label2.Location = New System.Drawing.Point(13, 36)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(372, 25)
         Me.Label2.TabIndex = 0

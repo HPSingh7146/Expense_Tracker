@@ -23,6 +23,7 @@ Partial Class Overview
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.Button1 = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.overviewExitbtn = New System.Windows.Forms.Button()
         Me.TabControl1 = New System.Windows.Forms.TabControl()
@@ -48,7 +49,6 @@ Partial Class Overview
         Me.endDateinc = New System.Windows.Forms.DateTimePicker()
         Me.startDateinc = New System.Windows.Forms.DateTimePicker()
         Me.inctotal = New System.Windows.Forms.Label()
-        Me.Button1 = New System.Windows.Forms.Button()
         Me.Panel1.SuspendLayout()
         Me.TabControl1.SuspendLayout()
         Me.TabPage1.SuspendLayout()
@@ -70,6 +70,20 @@ Partial Class Overview
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(1120, 50)
         Me.Panel1.TabIndex = 1
+        '
+        'Button1
+        '
+        Me.Button1.BackColor = System.Drawing.Color.Transparent
+        Me.Button1.FlatAppearance.BorderSize = 0
+        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button1.Font = New System.Drawing.Font("Segoe UI", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button1.ForeColor = System.Drawing.Color.Red
+        Me.Button1.Location = New System.Drawing.Point(899, 2)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(129, 47)
+        Me.Button1.TabIndex = 2
+        Me.Button1.Text = "Delete Entries"
+        Me.Button1.UseVisualStyleBackColor = False
         '
         'Label1
         '
@@ -162,7 +176,7 @@ Partial Class Overview
         Me.expreset.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.expreset.Font = New System.Drawing.Font("Segoe UI Semibold", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.expreset.ForeColor = System.Drawing.Color.White
-        Me.expreset.Location = New System.Drawing.Point(798, 7)
+        Me.expreset.Location = New System.Drawing.Point(798, 30)
         Me.expreset.Name = "expreset"
         Me.expreset.Size = New System.Drawing.Size(95, 34)
         Me.expreset.TabIndex = 29
@@ -377,20 +391,6 @@ Partial Class Overview
         Me.inctotal.Text = "0.00"
         Me.inctotal.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
-        'Button1
-        '
-        Me.Button1.BackColor = System.Drawing.Color.Transparent
-        Me.Button1.FlatAppearance.BorderSize = 0
-        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button1.Font = New System.Drawing.Font("Segoe UI", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.ForeColor = System.Drawing.Color.Red
-        Me.Button1.Location = New System.Drawing.Point(899, 2)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(129, 47)
-        Me.Button1.TabIndex = 2
-        Me.Button1.Text = "Delete Entries"
-        Me.Button1.UseVisualStyleBackColor = False
-        '
         'Overview
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 20.0!)
@@ -404,6 +404,7 @@ Partial Class Overview
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.Name = "Overview"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Overview"
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()

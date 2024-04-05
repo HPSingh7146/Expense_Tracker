@@ -28,11 +28,23 @@ Public Class LoginPage
     End Sub
 
     Private Sub logbtn_Click(sender As Object, e As EventArgs) Handles logbtn.Click
-        UsernameTxtbox.Text = "harsh123"
-        PasswordTxtbox.Text = "harsh@123"
+        ' Hard-coded username and password for testing
+        Dim Username As String
+        Dim Password As String
+        Username = UsernameTxtbox.Text
+        Password = PasswordTxtbox.Text
 
-        Dim Username As String = UsernameTxtbox.Text
-        Dim Password As String = PasswordTxtbox.Text
+
+
+
+        ' Check if the entered username is "admin"
+        If Username = "admin" Then
+            ' Open the AdminForm if the username is "admin"
+            Dim adminForm As New Admin()
+            adminForm.Show()
+            Me.Hide()
+            Return ' Exit the method to avoid executing the rest of the login logic
+        End If
 
         'connection logic
         'direct communication without function
@@ -71,8 +83,8 @@ Public Class LoginPage
         Catch ex As Exception
             MsgBox(ex.Message)
         End Try
-
     End Sub
+
 
     Private Sub loginnow_Click(sender As Object, e As EventArgs) Handles loginnow.Click
         regpnl.Hide()
@@ -116,5 +128,14 @@ Public Class LoginPage
             MessageBox.Show("Error: " & ex.Message)
         End Try
 
+    End Sub
+
+    Private Sub regnametxtbox_KeyPress(sender As Object, e As KeyPressEventArgs) Handles regnametxtbox.KeyPress
+        ' Check if the entered key is not a letter and not a control key
+        If Not Char.IsLetter(e.KeyChar) AndAlso Not Char.IsWhiteSpace(e.KeyChar) AndAlso Not Char.IsControl(e.KeyChar) Then
+            ' Suppress the key press
+            e.Handled = True
+            MsgBox("Only charecters")
+        End If
     End Sub
 End Class

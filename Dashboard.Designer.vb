@@ -25,6 +25,7 @@ Partial Class Dashboard
         Me.components = New System.ComponentModel.Container()
         Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.logoutbtn = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Panel2 = New System.Windows.Forms.Panel()
@@ -56,7 +57,6 @@ Partial Class Dashboard
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
         Me.ExpenseTrackerDataSetBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.ExpenseBindingSource2 = New System.Windows.Forms.BindingSource(Me.components)
-        Me.logoutbtn = New System.Windows.Forms.Button()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
         Me.Panel5.SuspendLayout()
@@ -80,6 +80,19 @@ Partial Class Dashboard
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(1074, 47)
         Me.Panel1.TabIndex = 0
+        '
+        'logoutbtn
+        '
+        Me.logoutbtn.FlatAppearance.BorderSize = 0
+        Me.logoutbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.logoutbtn.Font = New System.Drawing.Font("Segoe UI", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.logoutbtn.ForeColor = System.Drawing.Color.Crimson
+        Me.logoutbtn.Location = New System.Drawing.Point(894, -1)
+        Me.logoutbtn.Name = "logoutbtn"
+        Me.logoutbtn.Size = New System.Drawing.Size(88, 48)
+        Me.logoutbtn.TabIndex = 2
+        Me.logoutbtn.Text = "Logout"
+        Me.logoutbtn.UseVisualStyleBackColor = True
         '
         'Button1
         '
@@ -405,19 +418,6 @@ Partial Class Dashboard
         Me.ExpenseBindingSource2.DataMember = "expense"
         Me.ExpenseBindingSource2.DataSource = Me.ExpenseTrackerDataSetBindingSource
         '
-        'logoutbtn
-        '
-        Me.logoutbtn.FlatAppearance.BorderSize = 0
-        Me.logoutbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.logoutbtn.Font = New System.Drawing.Font("Segoe UI", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.logoutbtn.ForeColor = System.Drawing.Color.Crimson
-        Me.logoutbtn.Location = New System.Drawing.Point(894, -1)
-        Me.logoutbtn.Name = "logoutbtn"
-        Me.logoutbtn.Size = New System.Drawing.Size(88, 48)
-        Me.logoutbtn.TabIndex = 2
-        Me.logoutbtn.Text = "Logout"
-        Me.logoutbtn.UseVisualStyleBackColor = True
-        '
         'Dashboard
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 17.0!)
@@ -434,7 +434,6 @@ Partial Class Dashboard
         Me.Font = New System.Drawing.Font("Segoe UI", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "Dashboard"
-        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Dashboard"
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()

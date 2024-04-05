@@ -101,7 +101,7 @@ Partial Class LoginPage
         Me.register.Location = New System.Drawing.Point(257, 358)
         Me.register.Name = "register"
         Me.register.Size = New System.Drawing.Size(197, 55)
-        Me.register.TabIndex = 11
+        Me.register.TabIndex = 9
         Me.register.Text = "Register"
         Me.register.UseVisualStyleBackColor = False
         '
@@ -150,7 +150,7 @@ Partial Class LoginPage
         Me.regnametxtbox.Multiline = True
         Me.regnametxtbox.Name = "regnametxtbox"
         Me.regnametxtbox.Size = New System.Drawing.Size(399, 35)
-        Me.regnametxtbox.TabIndex = 15
+        Me.regnametxtbox.TabIndex = 6
         '
         'Label5
         '
@@ -205,7 +205,7 @@ Partial Class LoginPage
         Me.regpasstxtbox.Name = "regpasstxtbox"
         Me.regpasstxtbox.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
         Me.regpasstxtbox.Size = New System.Drawing.Size(399, 35)
-        Me.regpasstxtbox.TabIndex = 10
+        Me.regpasstxtbox.TabIndex = 8
         '
         'regunametxtbox
         '
@@ -217,7 +217,7 @@ Partial Class LoginPage
         Me.regunametxtbox.Multiline = True
         Me.regunametxtbox.Name = "regunametxtbox"
         Me.regunametxtbox.Size = New System.Drawing.Size(399, 35)
-        Me.regunametxtbox.TabIndex = 9
+        Me.regunametxtbox.TabIndex = 7
         '
         'Label4
         '
@@ -344,7 +344,7 @@ Partial Class LoginPage
         Me.logExit.Location = New System.Drawing.Point(499, 0)
         Me.logExit.Name = "logExit"
         Me.logExit.Size = New System.Drawing.Size(119, 60)
-        Me.logExit.TabIndex = 1
+        Me.logExit.TabIndex = 11
         Me.logExit.Text = "Exit"
         Me.logExit.UseVisualStyleBackColor = True
         '

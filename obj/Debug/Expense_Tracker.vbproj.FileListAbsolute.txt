@@ -15,3 +15,4 @@ C:\Users\hpsin\source\repos\Expense_Tracker\Expense_Tracker\obj\Debug\Expense_Tr
 C:\Users\hpsin\source\repos\Expense_Tracker\Expense_Tracker\obj\Debug\Expense_Tracker.AddExpenses.resources
 C:\Users\hpsin\source\repos\Expense_Tracker\Expense_Tracker\obj\Debug\Expense_Tracker.Overview.resources
 C:\Users\hpsin\source\repos\Expense_Tracker\Expense_Tracker\obj\Debug\Expense_Tracker.Delete_Entries.resources
+C:\Users\hpsin\source\repos\Expense_Tracker\Expense_Tracker\obj\Debug\Expense_Tracker.Admin.resources
