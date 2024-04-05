@@ -78,7 +78,7 @@ Partial Class Delete_Entries
         Me.overviewExitbtn.Name = "overviewExitbtn"
         Me.overviewExitbtn.Size = New System.Drawing.Size(86, 48)
         Me.overviewExitbtn.TabIndex = 2
-        Me.overviewExitbtn.Text = "Exit"
+        Me.overviewExitbtn.Text = "Back"
         Me.overviewExitbtn.UseVisualStyleBackColor = True
         '
         'TabControl1

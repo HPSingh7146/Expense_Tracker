@@ -65,4 +65,39 @@ Public Class AddExpenses
             e.Handled = True
         End If
     End Sub
+
+    'Code to make window Dragable
+    ' Define variables to keep track of mouse movement
+    Private isMouseDown As Boolean = False
+    Private mouseOffset As Point
+
+    ' MouseDown event handler for panel1
+    Private Sub Panel1_MouseDown(sender As Object, e As MouseEventArgs) Handles Panel1.MouseDown
+        ' Set the flag to indicate mouse down
+        isMouseDown = True
+
+        ' Store the current mouse cursor position
+        mouseOffset = e.Location
+    End Sub
+
+    ' MouseMove event handler for panel1
+    Private Sub Panel1_MouseMove(sender As Object, e As MouseEventArgs) Handles Panel1.MouseMove
+        ' Check if the mouse button is down (dragging)
+        If isMouseDown Then
+            ' Get the current mouse position relative to the form
+            Dim mousePos As Point = Me.PointToScreen(e.Location)
+
+            ' Calculate the new form position by offsetting with the mouse offset
+            Dim newFormPos As Point = mousePos - mouseOffset
+
+            ' Set the new form position
+            Me.Location = newFormPos
+        End If
+    End Sub
+
+    ' MouseUp event handler for panel1
+    Private Sub Panel1_MouseUp(sender As Object, e As MouseEventArgs) Handles Panel1.MouseUp
+        ' Reset the mouse down flag
+        isMouseDown = False
+    End Sub
 End Class

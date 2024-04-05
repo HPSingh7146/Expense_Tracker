@@ -202,7 +202,7 @@ Public Class Overview
 
     Private Sub increset_Click(sender As Object, e As EventArgs) Handles increset.Click
         Try
-            Dim expenseQuery As String = "SELECT amount, inc_remark, date FROM income WHERE username = @username"
+            Dim expenseQuery As String = "SELECT id, amount, inc_remark, date FROM income WHERE username = @username"
             DataGridView2.DataSource = getDataTable(expenseQuery, LoginPage.user)
         Catch ex As Exception
             MsgBox("Error loading income data: " & ex.Message)
@@ -211,7 +211,7 @@ Public Class Overview
 
     Private Sub expreset_Click(sender As Object, e As EventArgs) Handles expreset.Click
         Try
-            Dim expenseQuery As String = "SELECT amount, category, exp_remark, date FROM expense WHERE username = @username"
+            Dim expenseQuery As String = "SELECT id, amount, category, exp_remark, date FROM expense WHERE username = @username"
             DataGridView1.DataSource = getDataTable(expenseQuery, LoginPage.user)
         Catch ex As Exception
             MsgBox("Error loading expense data: " & ex.Message)
@@ -221,5 +221,40 @@ Public Class Overview
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         Me.Close()
         Delete_Entries.Show()
+    End Sub
+
+    'Code to make window Dragable
+    ' Define variables to keep track of mouse movement
+    Private isMouseDown As Boolean = False
+    Private mouseOffset As Point
+
+    ' MouseDown event handler for panel1
+    Private Sub Panel1_MouseDown(sender As Object, e As MouseEventArgs) Handles Panel1.MouseDown
+        ' Set the flag to indicate mouse down
+        isMouseDown = True
+
+        ' Store the current mouse cursor position
+        mouseOffset = e.Location
+    End Sub
+
+    ' MouseMove event handler for panel1
+    Private Sub Panel1_MouseMove(sender As Object, e As MouseEventArgs) Handles Panel1.MouseMove
+        ' Check if the mouse button is down (dragging)
+        If isMouseDown Then
+            ' Get the current mouse position relative to the form
+            Dim mousePos As Point = Me.PointToScreen(e.Location)
+
+            ' Calculate the new form position by offsetting with the mouse offset
+            Dim newFormPos As Point = mousePos - mouseOffset
+
+            ' Set the new form position
+            Me.Location = newFormPos
+        End If
+    End Sub
+
+    ' MouseUp event handler for panel1
+    Private Sub Panel1_MouseUp(sender As Object, e As MouseEventArgs) Handles Panel1.MouseUp
+        ' Reset the mouse down flag
+        isMouseDown = False
     End Sub
 End Class

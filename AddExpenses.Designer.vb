@@ -74,7 +74,7 @@ Partial Class AddExpenses
         Me.addExpensesExitbtn.Name = "addExpensesExitbtn"
         Me.addExpensesExitbtn.Size = New System.Drawing.Size(86, 48)
         Me.addExpensesExitbtn.TabIndex = 2
-        Me.addExpensesExitbtn.Text = "Exit"
+        Me.addExpensesExitbtn.Text = "Back"
         Me.addExpensesExitbtn.UseVisualStyleBackColor = True
         '
         'Label2

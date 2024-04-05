@@ -60,7 +60,7 @@ Partial Class AddIncome
         Me.addIncomeExitbtn.Name = "addIncomeExitbtn"
         Me.addIncomeExitbtn.Size = New System.Drawing.Size(69, 48)
         Me.addIncomeExitbtn.TabIndex = 2
-        Me.addIncomeExitbtn.Text = "Exit"
+        Me.addIncomeExitbtn.Text = "Back"
         Me.addIncomeExitbtn.UseVisualStyleBackColor = True
         '
         'Label1
