@@ -38,7 +38,7 @@ Public Class LoginPage
 
 
         ' Check if the entered username is "admin"
-        If Username = "admin" Then
+        If Username = "admin" AndAlso Password = "admin" Then
             ' Open the AdminForm if the username is "admin"
             Dim adminForm As New Admin()
             adminForm.Show()
